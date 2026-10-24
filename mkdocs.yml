@@ -1,0 +1,67 @@
+site_name: Senior Java Interview Prep
+site_description: Personal, reusable knowledge base for senior Java developer interviews.
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+  - Roadmap: roadmap.md
+  - Java core:
+      - JVM, memory and GC: java-core/jvm-memory-gc.md
+      - Concurrency: java-core/concurrency.md
+      - Collections: java-core/collections.md
+      - Modern Java (8 to 21): java-core/modern-java.md
+  - Spring and data:
+      - Spring and Spring Boot: spring/spring-boot.md
+      - Transactions, JPA, SQL: spring/data.md
+  - Architecture:
+      - Microservices and messaging: architecture/microservices.md
+      - System design: architecture/system-design.md
+      - Design principles and patterns: architecture/patterns.md
+  - Testing: testing.md
+  - Algorithms and coding: algorithms.md
+  - Behavioral: behavioral.md
+  - Question bank: question-bank.md
+  - Interview log:
+      - Overview: interview-log/index.md
+      - Template: interview-log/template.md
+  - Inbox: inbox.md
