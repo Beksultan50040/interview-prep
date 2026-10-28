@@ -1,0 +1,13 @@
+---
+description: Style conventions for the interview prep notes in docs/
+globs: docs/**/*.md
+alwaysApply: false
+---
+
+- Topic pages use: `## Key concepts`, a table or code block, `## Common questions`, then a `!!! warning "Gotchas"` admonition.
+- Short English bullets, one idea each; bold the term being defined.
+- Tag version-specific facts (for example "Java 21+").
+- Never paste raw chat transcripts; keep compact notes only.
+- Page title must match its `nav` entry in `mkdocs.yml`.
+- Do not commit private data such as salary or offer details.
+- Questions go to `docs/question-bank.md` with a short answer and a level: strong, medium or weak.
